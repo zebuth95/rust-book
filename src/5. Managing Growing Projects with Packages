@@ -1,0 +1,20 @@
+# Modules in Different Files
+
+You can split a module into its own file.
+
+```
+src/
+├── lib.rs           // declares `pub mod front_of_house;`
+└── front_of_house/
+    └── hosting.rs   // declares `pub fn add_to_waitlist()`
+```
+
+```rust
+// lib.rs
+pub mod front_of_house;
+
+// front_of_house/hosting.rs
+pub fn add_to_waitlist() {}
+```
+
+> **Note:** File tree mirrors the module tree. Use `pub use` to re-export.

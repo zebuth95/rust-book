@@ -1,3 +1,4 @@
+```
 # TOML
 
 **TOML** (Tom's Obvious, Minimal Language) is a config format used by Cargo (`Cargo.toml`). Simple, readable.
@@ -8,7 +9,7 @@
 [package]
 name = "my_crate"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 rand = "0.8"
@@ -37,3 +38,4 @@ fn main() {
 ```
 
 > **Note:** Use `serde` + `toml` crate to parse TOML into Rust structs.
+```

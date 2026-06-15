@@ -1,3 +1,4 @@
+```
 # Cargo
 
 **Cargo** is Rust's build system and package manager.
@@ -14,7 +15,10 @@
 | `cargo fmt` | Format code |
 | `cargo clippy` | Lint (find common mistakes) |
 | `cargo doc --open` | Generate and open docs |
-| `cargo add some_crate` | Add a dependency |
+| `cargo add` | Add dependencies |
+| `cargo remove` | Remove dependencies |
+| `cargo tree` | Show dependency tree visualization |
+| `cargo update` | Update dependencies in Cargo.lock |
 | `cargo build --release` | Compile with optimizations |
 
 ```toml
@@ -22,10 +26,11 @@
 [package]
 name = "my_project"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 ```
 
 > **Note:** Cargo fetches crates from [crates.io](https://crates.io), the official registry.
+```
